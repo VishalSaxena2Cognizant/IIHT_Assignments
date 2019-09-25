@@ -1,2 +1,0 @@
-This is test file. Have to check whether all contents can be read or not.
-Also see whether enter has been read.
