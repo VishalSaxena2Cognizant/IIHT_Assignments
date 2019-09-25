@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .line {
+      margin:5px 0;
+      height:1px;
+      background:
+              repeating-linear-gradient(to right,darkgrey 0,darkgrey 5px,transparent 5px,transparent 7px)
+      /*5px red then 2px transparent -> repeat this!*/
+    }
+  </style>
+  <title>Assignment 09</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+</head>
+<br> </br>
+<body style="background-color:gray;color:gray;">
+
+<div class="container" style="background-color:#13232f; padding-left:400px; padding-right:400px">
+  <h2>Sign up</h2>
+  <form action="/action_page.php">
+  <div class="form-group">
+      <label for="email">Username:</label>
+      <input type="username" class="form-control" id="username" placeholder="Username" name="email">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Retype Password:</label>
+      <input type="password" class="form-control" id="retypepwd" placeholder="Retype password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="Acceptbox"> Accept Terms and Conditions</label>
+    </div>
+    <button type="submit" style="background-color: deepskyblue" class="btn btn-default">SIGN UP</button>
+    <br></br>
+  </form>
+</div>
+
+
+
+<div class="container" style="background-color:#13232f; padding-left:400px; padding-right:400px">
+  <div class="line"></div>
+<br>
+  <div style="text-align: center">Already have an account?</div>
+<br>
+    <button type="submit" style="background-color: darkgray; width: 100%" class="btn btn-default">SIGN IN</button>
+    <br><br>
+
+</div>
+</body>
+</html>

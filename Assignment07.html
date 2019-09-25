@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<script type="text/javascript">
+
+function changeFont() 
+{
+	text.style.fontFamily = "Times New Roman";
+	text.style.fontSize = "24pt";
+	text.style.color = "red";
+}
+
+function getFirstAndLastName()
+{
+	var elem = document.getElementById("name_form");
+	for (var indx = 0; indx < elem.length; indx++)
+	{
+		if (elem.elements[indx].value != 'Submit')
+		{  
+			alert(elem.elements[indx].value);
+		}  
+	}
+}
+
+function setBackground() 
+{
+	pElements = document.getElementsByTagName("body")[0].getElementsByTagName("p");
+	p = pElements[1];
+	p.style.background = "rgb(110,255,10)";
+}
+
+function getAttributes()
+{
+	alert('The value of the href attribute of the link is : '+ document.getElementById("attribForm").href);
+	alert('The value of the hreflang attribute of the link is : '+ document.getElementById("attribForm").hreflang);
+	alert('The value of the rel attribute of the link is : '+ document.getElementById("attribForm").rel);
+	alert('The value of the taget attribute of the link is : '+ document.getElementById("attribForm").target);
+	alert('The value of the type attribute of the link is : '+ document.getElementById("attribForm").type);  
+}
+
+function insertRow()
+{
+	var row = document.getElementById('sampleTable').insertRow(0);
+	var cell1 = row.insertCell(0);
+	var cell2 = row.insertCell(1);
+	cell1.innerHTML = "New Value1";
+	cell2.innerHTML = "New Value2";
+}
+
+
+function changeContent()
+{
+	row = window.prompt("Input the Row number(0,1,2)", "0");
+	coln = window.prompt("Input the Column number(0,1)","0");
+	content = window.prompt("Input the Cell content");  
+	var val = document.getElementById('myTable').rows[parseInt(row,10)].cells;
+	val[parseInt(coln,10)].innerHTML=content;
+}
+
+function createTable()
+{
+	row = window.prompt("Input number of rows", 1);
+	coln = window.prompt("Input number of columns",1);
+  
+	for(var rn = 0; rn < parseInt(row,10); rn++)
+	{
+		var elem = document.getElementById('newTable').insertRow(rn);
+		for(var cn = 0; cn < parseInt(coln,10); cn++)  
+		{
+			var val =  elem.insertCell(cn);
+			val.innerHTML="Row-"+rn+" Column-"+cn; 
+		}
+	}
+}
+
+function removeItem()
+{
+	var item = document.getElementById("shapeRemove");
+	item.remove(item.selectedIndex);
+}
+
+</script>
+
+</head> 
+
+<body>
+
+<p id ='text'>Here is a sample html file with a submit button. <br> 
+			Now modify the style of the paragraph text through javascript code. <br> 
+			Clicking on the button the font, font size, and color of the paragraph text will be changed.
+</p> 
+<div>
+	<button id="fontStyling" onclick="changeFont()">Submit</button>
+</div>
+
+<hr><br>
+
+<form id="name_form" onsubmit="getFirstAndLastName()">
+	First name: <input type="text" name="fname"><br>
+	Last name: <input type="text" name="lname"><br>
+	<input type="submit" value="Submit">
+</form>
+
+<hr><br>
+
+<p>JavaScript program to set the background color of a paragraph.</p>
+<input type="button" value="Change Bckgrnd Color" onclick="setBackground()">
+
+<hr><br>
+
+<p>
+	<a id="attribForm" type="text/html" hreflang="en-us" rel="external" target="_blank" href="https://iiht.adobeconnect.com">MEAN Learning Course</a>
+</p> 
+<button onclick="getAttributes()">Get Attributes</button>
+
+<hr><br>
+
+<table id="sampleTable" border="1"> 
+	<tr>
+		<td>Value11</td> 
+		<td>Value12</td>
+	</tr> 
+	<tr>
+		<td>Value21</td> 
+		<td>Value22</td>
+	</tr> 
+</table>
+<br> 
+<input type="button" onclick="insertRow()" value="Insert Row">
+
+<hr><br>
+
+<table id="myTable" border="1"> 
+	<tr>
+		<td>Content11</td> 
+		<td>Content12</td>
+	</tr> 
+	<tr>
+		<td>Content21</td> 
+		<td>Content22</td>
+	</tr> 
+	<tr>
+		<td>Content31</td> 
+		<td>Content32</td>
+	</tr> 
+</table>
+<br> 
+<input type="button" onclick="changeContent()" value="Change Content"> 
+ 
+<hr><br>
+
+<table id="newTable" border="1"></table>
+<br>
+<input type="button" onclick="createTable()" value="Create Table"> 
+
+<hr><br>
+
+<select id="shapeRemove"> 
+	<option>Square</option> 
+	<option>Circle</option> 
+	<option>Rectangle</option> 
+	<option>Triangle</option> 
+	<option>Rhombus</option> 
+</select> 
+<input type="button" onclick="removeItem()" value="Remove Item"> 
+
+</body>
+
+</html>
