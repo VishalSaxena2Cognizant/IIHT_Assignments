@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    Fields marked (*) are required <br><br>
+</head>
+
+<body>
+<form method="">
+<fieldset>
+    <table>
+        <legend>Input Text Field Validation</legend>
+        <p>
+            <tr>
+                <td>
+                    <label>First Name * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </td>
+                <td>
+                    <input type="text" name="first_name" placeholder="First Name" required>
+                </td>
+            </tr>
+        </p>
+        <p>
+            <tr>
+                <td>
+                    <label>Last Name * </label>
+                </td>
+                <td>
+                    <input type="text" name="last_name" placeholder="Last Name" required>
+                </td>
+            </tr>
+        </p>
+    </table>
+</fieldset>
+
+<br>
+
+<fieldset>
+    <table>
+        <legend>Email and URL Validation</legend>
+        <p>
+            <tr>
+                <td>
+                    <label>Email * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </td>
+                <td>
+                    <input type="text" name="email_id" placeholder="e.g. aaa@domain.com " required>
+                </td>
+            </tr>
+        </p>
+        <p>
+            <tr>
+                <td>
+                    <label>Website *</label>
+                </td>
+                <td>
+                    <input type="text" name="site_name" placeholder="e.g. http://www.html5andcss3.org" required>
+                </td>
+            </tr>
+        </p>
+    </table>
+</fieldset>
+
+<br>
+
+<fieldset>
+    <legend>Mobile or Phone Number Validation</legend>
+    <p>
+        <label>Mobile * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        </label>
+        <input type="tel" name="phone_number" placeholder="Please enter a ten digit phone number">
+    </p>
+</fieldset>
+
+<br>
+
+<fieldset>
+    <legend>Drop Down Box Validation</legend>
+    <p>
+        <label>Country &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select id="country" name="country">
+            <option value="India" selected="selected">India</option>
+            <option value="Others" >Others</option>
+        </select>
+    </p>
+</fieldset>
+
+<br>
+
+<fieldset>
+    <legend>Number Validation With Specific Range</legend>
+    <p>
+        <label>Post code * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="postcode" value="" required>
+    </p>
+</fieldset>
+
+<br>
+
+<fieldset>
+    <legend>Textarea Validation</legend>
+    <p>
+        <label>Address * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="address" value="" required>
+    </p>
+</fieldset>
+
+<br>
+
+<fieldset>
+    <legend>CheckBox and Radio Button Validation</legend>
+    <p>
+        <table>
+            <tr>
+                <td>
+                    <label> Agree to T & C * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="terms" value="Agree to T & C *">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    General *
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </p>
+</fieldset>
+ 
+<br>
+
+<fieldset>
+    <legend> Password Validation Using Pattern</legend>
+    <p>
+        <label>Password * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="password" name="user_pwd" required>
+    </p>
+</fieldset>
+  
+<p align="right"><button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Sign up     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></p>
+
+</form>
+</body>
+</html>
