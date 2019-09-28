@@ -75,9 +75,10 @@ function readAndWriteFile(fileToRead, fileToWrite) {
     });
 }
 
+//Commenting because Jenkins job will not get completed for the following programs
 
 // 4) Write a program to read data from a html file and display on the browser.
-
+/*
 http.createServer(function (req, res) {
   //Open a file on the server and return its content:
   fs.readFile('demofile1.html', function(err, data) {
@@ -98,3 +99,4 @@ http.createServer(function (req, res) {
         return res.end();
     });
 }).listen(8083);
+*/
